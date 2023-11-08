@@ -1,0 +1,113 @@
+<html>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Sunk Robotics
+  </title>
+  
+
+  <link rel="stylesheet" type="text/css" href="https://example.org/css/index.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> 
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
+  <style>
+    .content {
+      font-family: 'Inter', 'sans-serif';
+    }
+
+    .content > h1 {
+      font-size: 2.5rem;
+    }
+
+    .content > h2 {
+      font-size: 1.5rem;
+    }
+
+    .content > h3 {
+      font-size: 1.2rem;
+    }
+
+    .content > p {
+      font-size: 1.2rem;
+    }
+  </style>
+
+  </head>
+  <body>
+    
+<script>
+    function changeMode(ele) {
+        if (localStorage.theme === "dark") {
+            localStorage.theme = "light"
+            document.documentElement.classList.remove("dark")
+        } else {
+            localStorage.theme = "dark"
+            document.documentElement.classList.add("dark")   
+        }
+    }
+
+    function loadIcon(ele) {
+        if (localStorage.theme === "dark") {
+            console.log("darkening icon");
+            ele.src = "/icons/dark.svg"
+        } else {
+            console.log("lightening icon")
+            ele.src = "/icons/light.svg"
+        }
+    }
+</script>
+
+<nav class="text-slate-200 grid grid-rows-2 md:gap-4 justify-items-center  md:flex bg-blue-500 w-screen py-5 px-10 justify-between items-center border-b-2 dark:border-slate-600 dark:bg-blue-900">
+    <a href="/" class="text-2xl text-center">Sunk Robotics</a>
+    <div class="md:w-auto grid grid-cols-4 md:grid-cols-5 gap-x-2 md:gap-x-10 font-primary">
+        <a href="/" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">Home</a>
+        <a href="" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">Docs</a>
+        <a href="" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">Contact</a>
+        <a href="/about" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">About</a>
+        <button onclick="changeMode(this)" class="col-span-4 md:col-auto text-slate-200 p-3 text-center rounded-xl flex justify-center bg-blue-400 dark:bg-blue-600">
+            <img src="/icons/dark.svg" onshow="loadIcon(this)" alt="dark/light mode icon" class=" h-full px-3">
+        </button>
+    </div>
+</nav>
+    
+<article class="bg-about flex flex-col items-center min-h-screen">
+  <header class="mb-4">
+    <span class="py-96">
+      <h1 class="py-16 text-5xl font-primary text-center text-slate-200">
+        About
+      </h1>
+    </span>
+  </header>
+  
+  <div class="text-slate-200 w-3/5 text-center content dark:bg-blue-trans  bg-sky-trans py-20 border-2 dark:border-slate-600 border-slate-200 rounded-3xl px-5 space-y-10 ">
+    <h1 id="what-is-sunk">What is Sunk?</h1>
+<p>Sunk Robotics is a robotics organization that competes in the MATE ROV competition.
+Competing involves building a underwater robot to fulfill tasks assigned by MATE.
+Teams start off competing in a regional competition.
+The teams that perform well move onto the international competition.
+MATE also has a class structure. Sunk competes in the Ranger class, the second highest class.</p>
+<p>We compete in the New England Regional, of which we have won every of for the last 3 years.</p>
+
+  </div>
+</article>
+
+    
+    
+    
+
+
+
+
+  </body>
+</html>

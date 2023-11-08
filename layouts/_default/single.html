@@ -1,0 +1,22 @@
+{{define "main"}}
+<article class="flex flex-col items-center min-h-screen">
+  <header class="p-10 dark:bg-blue-900 w-full text-center">
+    <h1 class="dark:text-white text-6xl font-primary ">{{ .Title }}</h1>
+  </header>
+
+  <div class="dark:bg-blue-950 text-white font-primary p-20 min-h-screen ">
+    <style>
+      h1 {
+        font-size: 2.5rem;
+        padding: 2rem 0 2rem 0;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+      }
+    </style>
+    {{.Content}}
+  </div>
+</article>
+{{end}}

@@ -1,0 +1,110 @@
+<html>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Sunk Robotics
+  </title>
+  
+
+  <link rel="stylesheet" type="text/css" href="https://example.org/css/index.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> 
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
+  <style>
+    .content {
+      font-family: 'Inter', 'sans-serif';
+    }
+
+    .content > h1 {
+      font-size: 2.5rem;
+    }
+
+    .content > h2 {
+      font-size: 1.5rem;
+    }
+
+    .content > h3 {
+      font-size: 1.2rem;
+    }
+
+    .content > p {
+      font-size: 1.2rem;
+    }
+  </style>
+
+  </head>
+  <body>
+    
+<script>
+    function changeMode(ele) {
+        if (localStorage.theme === "dark") {
+            localStorage.theme = "light"
+            document.documentElement.classList.remove("dark")
+        } else {
+            localStorage.theme = "dark"
+            document.documentElement.classList.add("dark")   
+        }
+    }
+
+    function loadIcon(ele) {
+        if (localStorage.theme === "dark") {
+            console.log("darkening icon");
+            ele.src = "/icons/dark.svg"
+        } else {
+            console.log("lightening icon")
+            ele.src = "/icons/light.svg"
+        }
+    }
+</script>
+
+<nav class="text-slate-200 grid grid-rows-2 md:gap-4 justify-items-center  md:flex bg-blue-500 w-screen py-5 px-10 justify-between items-center border-b-2 dark:border-slate-600 dark:bg-blue-900">
+    <a href="/" class="text-2xl text-center">Sunk Robotics</a>
+    <div class="md:w-auto grid grid-cols-4 md:grid-cols-5 gap-x-2 md:gap-x-10 font-primary">
+        <a href="/" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">Home</a>
+        <a href="" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">Docs</a>
+        <a href="" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">Contact</a>
+        <a href="/about" class="hover:bg-blue-400 dark:hover:bg-blue-600 p-3 text-center rounded-xl">About</a>
+        <button onclick="changeMode(this)" class="col-span-4 md:col-auto text-slate-200 p-3 text-center rounded-xl flex justify-center bg-blue-400 dark:bg-blue-600">
+            <img src="/icons/dark.svg" onshow="loadIcon(this)" alt="dark/light mode icon" class=" h-full px-3">
+        </button>
+    </div>
+</nav>
+    
+  <section class="md:grid grid-cols-2 justify-items-center items-center dark:bg-blue-900 bg-blue-500 text-slate-200 font-primary">
+    <div class="w-full h-[65vh] flex flex-col items-center justify-center space-y-3">
+      <h1 class="text-7xl text-center">Sunk Robotics</h1>
+      <h2 class="text-4xl text-center">Innovative Underwater Engineering</h2>
+    </div>
+    <img src="/images/team.jpg" alt="picture of the sunk team" width="80%" class="rounded-xl">
+  </section>
+  <section class="md:grid grid-cols-2 justify-items-center items-center dark:bg-blue-950 bg-slate-200 text-slate-900 dark:text-slate-200 font-primary">
+    <img src="/images/poolside.jpg" alt="Two sunk team members by the pool" width="80%" class="rounded-xl">
+    <div class="w-full h-[65vh] flex flex-col items-center justify-center space-y-3">
+      <h1 class="text-7xl text-center">Our Mission</h1>
+      <p class="text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolorem voluptatem, libero commodi quasi fugiat voluptates nemo iure, repudiandae corrupti sunt nisi dolor quaerat animi fugit odio aperiam suscipit maiores.</p>
+    </div>
+  </section>
+  <section>
+    
+  </section>
+
+    
+    
+    
+
+
+
+
+  </body>
+</html>

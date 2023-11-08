@@ -1,0 +1,60 @@
+<html>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ block "title" . }}
+    {{ .Site.Title }}
+  {{ end }}</title>
+  {{ $css := resources.Get "css/index.css" }}
+
+  <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> 
+
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
+  <style>
+    .content {
+      font-family: 'Inter', 'sans-serif';
+    }
+
+    .content > h1 {
+      font-size: 2.5rem;
+    }
+
+    .content > h2 {
+      font-size: 1.5rem;
+    }
+
+    .content > h3 {
+      font-size: 1.2rem;
+    }
+
+    .content > p {
+      font-size: 1.2rem;
+    }
+  </style>
+
+  </head>
+  <body>
+    {{ partial "nav.html" }}
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+
+
+
+
+  </body>
+</html>
