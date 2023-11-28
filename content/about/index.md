@@ -10,7 +10,7 @@ We create underwater robots designed to aid in sustainability efforts by replaci
 
 If you are interested in supporting Sunk Robotics, or have any questions, you can reach us at sunk@sunkrobotics.com. 
 
-![Image of the Sunk Robotics team](images/team.webp)
+![Image of the Sunk Robotics team](team.webp)
 
 # The MATE ROV Competition
 
@@ -18,7 +18,7 @@ Sunk Robotics has competed in the MATE ROV Competition for three years. MATE ROV
 
 In MATE ROV, teams simulate companies. MATE ROV teams follow a corporate structure and earn points for non-engineering tasks such as marketing, techinical documentation, and corporate responsibility.
 
-![MATE ROV Logo](images/MATE-ROV-logo.webp)
+![MATE ROV Logo](MATE-ROV-logo.webp)
 
 # The Sunk Robotics Fleet
 
@@ -28,16 +28,16 @@ Throughout the three year history of Sunk Robotics, we have had three robots in 
 
 JONA ROV is our newest addition to the Sunk Robotics Fleet. Using an overhauled frame and a new PCB Based Electronics system, JONA ROV has improved maneuverability, reliability, and serviceability over STEVE ROV. 
 
-![JONA ROV](images/JONA.webp)
+![JONA ROV](JONA.webp)
 
 ## Sunk Robotics Float
 
 The Sunk Robotics Float changes its density to move vertically in the water while using very little power. We emphasized simplicity in our design by using the housing as the wall of the piston and minimizing the amount of moving parts.
 
-![Float](images/float_v2.webp)
+![Float](float_v2.webp)
 
 ## STEVE ROV
 
 STEVE ROV was Sunk Robotics first vehicle, and it won the New England Regional Competition two years in a row. Although STEVE has been retired to pilot training, it is still an important part of Sunk Robotics history.
 
-![STEVE ROV](images/STEVE.webp)
+![STEVE ROV](STEVE.webp)
